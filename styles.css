@@ -6,10 +6,6 @@
   box-sizing: border-box;
 }
 
-
- 
-
-
 html {
   font-size: 14px;
 }
@@ -160,4 +156,32 @@ body {
 
   li {
     padding: 0.25rem;
+  }
+
+  /* Desktop */
+
+  /* Media Query */
+
+  @media screen and (min-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(2, minmax(175px, 350px));
+        grid-template-rows: repeat(2, 240px);
+        max-width: 1440px;
+    }
+
+    .join-info {
+        grid-column: 1 / 3;
+        justify-content: center;
+        
+    }
+
+    
+
+    .price-info {
+        border-radius: 0 0 0 8px;
+    }
+
+    .why-info {
+        border-radius: 0 0 8px 0;
+    }
   }
